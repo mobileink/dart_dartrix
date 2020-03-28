@@ -1,0 +1,13 @@
+name: hello
+version: 0.1.0
+docstring: A simple template
+description: Generates a Dart app that prints a hello msg.
+
+params:
+- name: 'package'
+  abbr: 'p'
+  docstring: 'Dart package name.'
+  help: 'Dart package name.'
+  typeHelp: 'dir'
+  defaultsTo: 'mycmd'
+  hook:     'dpkg-hook'
