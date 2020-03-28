@@ -1,3 +1,7 @@
+## 0.1.3-beta
+
+- fix bug in dart_dartrix.dart
+
 ## 0.1.2-beta
 
 - chg name from null.dart to dart_dartrix.dart to make pub.dev happy
