@@ -1,5 +1,5 @@
 name: dart
-version: 0.1.1-beta
+version: 0.1.2-beta
 docstring: A Dartrix template library of Dart code.
 description: Contains a collection of templates for generating Dart apps, libraries, etc.
 

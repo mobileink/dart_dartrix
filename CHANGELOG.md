@@ -1,3 +1,7 @@
+## 0.1.2-beta
+
+- chg name from null.dart to dart_dartrix.dart to make pub.dev happy
+
 ## 0.1.1-beta
 
 - Add lib/null.dart to avoid "No valid SDK" bug in pub.dev
