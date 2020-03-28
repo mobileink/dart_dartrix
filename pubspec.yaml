@@ -1,7 +1,7 @@
 name: dart_dartrix
 description: Dartrix template plugin package.  Contains templates for Dart apps, libraries, packages, etc.
 homepage: https://github.com/mobileink/dart_dartrix
-version: 0.1.1-beta
+version: 0.1.2-beta
 
 dependencies:
   args: ^1.5.3
