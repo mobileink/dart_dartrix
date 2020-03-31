@@ -1,7 +1,9 @@
 name: hello
-version: 0.1.0
+version: 0.3.0
 docstring: A simple template
 description: Generates a Dart app that prints a hello msg.
+
+dartrix: 0.1.24-alpha
 
 params:
 - name: 'package'

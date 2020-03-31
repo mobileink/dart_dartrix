@@ -1,13 +1,15 @@
 name: dart
-version: 0.2.0
+version: 0.3.0
 docstring: A Dartrix template library of Dart code.
 description: Contains a collection of templates for generating Dart apps, libraries, etc.
+
+dartrix: 0.1.24-alpha
 
 ## Data elements shared by all templates in this library:
 params:
 - name: 'lang'
   abbr: 'l'
-  docstring: 'Natural language.
+  docstring: 'Natural language.'
   # help: ''
   typeHelp: 'string'
   defaultsTo: 'En'
