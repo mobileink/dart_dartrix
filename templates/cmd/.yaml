@@ -1,15 +1,22 @@
-name: hello
-version: 0.3.0
-docstring: A simple template
-description: Generates a Dart app that prints a hello msg.
+name         : hello
+version      : 0.3.0
+docstring    : A simple template
+description  : Generates a Dart app that prints a hello msg.
 
-dartrix: 0.1.24-alpha
+dartrix      : 0.1.24-alpha
 
-params:
-- name: 'name'
-  abbr: 'n'
-  docstring: 'Dart package name.'
-  help: 'Dart package name.'
-  typeHelp: '_package_name'
-  defaultsTo: 'mycmd'
-  hook:     'dpkg-hook'
+params       :
+- name       : name
+  abbr       : n
+  docstring  : Dart package name.
+  help       : Dart package name.
+  type       : _dart_package
+  defaultsTo : mycmd
+  # hook       : dpkg-hook
+
+- name       : out
+  abbr       : o
+  docstring  : Output directory
+  help       : Output path relative to current working directory.
+  type       : _out_prefix
+  defaultsTo : mycmd
