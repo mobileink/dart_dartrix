@@ -2,11 +2,11 @@ import 'dart:io';
 
 import 'package:args/args.dart';
 
-import 'package:{{package}}/bar.dart';
+import 'package:{{package.dart}}/foo.dart';
 
 void printUsage(ArgParser argParser) {
-  print('Do some barrish stuff.\n');
-  print('Usage: bar [arguments]');
+  print('Do some fooey stuff.\n');
+  print('Usage: foo [arguments]');
   print(argParser.usage);
 }
 
@@ -14,7 +14,7 @@ ArgResults init(List<String> args) {
   var argParser = ArgParser();
   argParser.addFlag('help', abbr: 'h', negatable: false, defaultsTo: false,
   help: 'Print this usage information.');
-  argParser.addOption('msg', abbr: 'm', help: 'Bar msg', defaultsTo: 'Goodbye');
+  argParser.addOption('msg', abbr: 'm', help: 'Foo msg', defaultsTo: 'Hello');
   argParser.addFlag('debug', defaultsTo: false);
   argParser.addFlag('verbose', abbr: 'v', defaultsTo: false);
   var options = argParser.parse(args);
@@ -34,9 +34,8 @@ ArgResults init(List<String> args) {
 void main(List<String> args) {
   var options = init(args);
 
-  print('Running command \'bar\'...');
+  print('Hello from command \'foo\'!');
 
-  // this cmd is just a CLI interface to bar functionality in the lib:
+  // this is just a CLI interface to foo functionality in the lib:
   f(options['msg']);
-  g();
 }

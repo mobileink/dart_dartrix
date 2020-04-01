@@ -1,31 +1,46 @@
-name: cmd_shell
-version: 0.1.0
-docstring: Dart command shell app
-description: A template for a command shell application.
+name         : cmd_shell
+version      : 0.1.0
+docstring    : Dart command shell app
+description  : A template for a command shell application.
 
-dartrix: 0.1.24-alpha
+dartrix      : 0.1.24-alpha
 
 params:
-- name: 'homepage'
-  abbr: 'x'
-  docstring: 'cmd prefix'
-  defaultsTo: 'https://example.org/myapp'
-  typeHelp: 'URL'
-  help: 'Homepage for app.'
 
-- name: 'package'
-  abbr: 'p'
-  docstring: 'Dart package name.'
-  help: 'Dart package name.'
-  typeHelp: '[_a-z][a-zA-Z0-9_]*'
-  defaultsTo: 'myapp'
-  seg: 'PKG'
+- name       : name
+  abbr       : n
+  docstring  : Dart package name.
+  help       : Dart package name.
+  type       : _dart_package
+  defaultsTo : myshell
+  seg        : MYSHELL
 
-- name: 'dartrix-config-home'
-  abbr: 'd'
-  docstring: 'Home directory for Dartrix config dir.'
-  help: 'The output file will be written to the --config-dir subdirectory of this directory.'
-  typeHelp: 'dir'
-  defaultsTo: '$HOME'
-  seg : 'HOME'
+- name       : out
+  abbr       : o
+  docstring  : Output directory
+  help       : Output path relative to current working directory.
+  type       : _out_prefix
+  defaultsTo : myshell
 
+# - name       : 'package'
+#   abbr       : 'p'
+#   docstring  : 'Dart package name.'
+#   help       : 'Dart package name.'
+#   type       : '[_a-z][a-zA-Z0-9_]*'
+#   defaultsTo : 'myapp'
+#   seg        : 'PKG'
+
+# - name       : 'dartrix-config-home'
+#   abbr       : 'd'
+#   docstring  : 'Home directory for Dartrix config dir.'
+#   help       : 'The output file will be written to the --config-dir subdirectory of this directory.'
+#   type       : 'dir'
+#   defaultsTo : '$HOME'
+#   seg        : 'HOME'
+
+- name       : 'homepage'
+  abbr       : 'w'
+  docstring  : 'cmd prefix'
+  defaultsTo : 'https://example.org/myapp'
+  type       : 'URL'
+  help       : 'Homepage for app.'
