@@ -1,7 +1,6 @@
 import 'dart:isolate';
 
-SendPort dartrixPort;
-
-void main() {
-  dartrixPort.send({});
+// This is not currently used; it's only here to satisfy pub.dev
+void main(List<String> args, SendPort sPort) {
+  sPort.send({});
 }
