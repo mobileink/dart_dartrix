@@ -6,10 +6,10 @@ description: Generates a Dart app that prints a hello msg.
 dartrix: 0.1.24-alpha
 
 params:
-- name: 'package'
-  abbr: 'p'
+- name: 'name'
+  abbr: 'n'
   docstring: 'Dart package name.'
   help: 'Dart package name.'
-  typeHelp: 'dir'
+  typeHelp: '_package_name'
   defaultsTo: 'mycmd'
   hook:     'dpkg-hook'
