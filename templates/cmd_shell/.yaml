@@ -1,5 +1,5 @@
 name         : cmd_shell
-version      : 0.2.0
+version      : 0.2.1
 docstring    : Dart command shell app
 description  : A template for a command shell application.
 
