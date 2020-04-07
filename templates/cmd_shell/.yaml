@@ -8,7 +8,7 @@ dartrix      : 0.2.0
 params:
   sys:
     - id : package
-      defaultsTo : mypkg
+      defaultsTo : myshell
     - id: out
       defaultsTo : <<package>>
 
