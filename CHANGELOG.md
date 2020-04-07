@@ -1,3 +1,7 @@
+## 0.2.3
+
+- add example
+
 ## 0.2.2
 
 - fix cmd_shell, to version 0.2.1

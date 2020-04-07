@@ -2,7 +2,7 @@ name         : dart_dartrix
 docstring    : Templates for Dart code.
 description  : Dartrix template plugin package.  Contains templates for Dart apps, libraries, packages, etc.
 homepage     : https://github.com/mobileink/dart_dartrix
-version      : 0.2.2
+version      : 0.2.3
 
 dependencies :
   args       : ^1.5.3
