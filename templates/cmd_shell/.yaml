@@ -6,41 +6,16 @@ description  : A template for a command shell application.
 dartrix      : 0.1.24-alpha
 
 params:
+  sys:
+    - id : package
+      defaultsTo : mypkg
+    - id: out
+      defaultsTo : <<package>>
 
-- name       : name
-  abbr       : n
-  docstring  : Dart package name.
-  help       : Dart package name.
-  type       : _dart_package
-  defaultsTo : myshell
-  seg        : MYSHELL
-
-- name       : out
-  abbr       : o
-  docstring  : Output directory
-  help       : Output path relative to current working directory.
-  type       : _out_prefix
-  defaultsTo : myshell
-
-# - name       : 'package'
-#   abbr       : 'p'
-#   docstring  : 'Dart package name.'
-#   help       : 'Dart package name.'
-#   type       : '[_a-z][a-zA-Z0-9_]*'
-#   defaultsTo : 'myapp'
-#   seg        : 'PKG'
-
-# - name       : 'dartrix-config-home'
-#   abbr       : 'd'
-#   docstring  : 'Home directory for Dartrix config dir.'
-#   help       : 'The output file will be written to the --config-dir subdirectory of this directory.'
-#   type       : 'dir'
-#   defaultsTo : '$HOME'
-#   seg        : 'HOME'
-
-- name       : 'homepage'
-  abbr       : 'w'
-  docstring  : 'cmd prefix'
-  defaultsTo : 'https://example.org/myapp'
-  type       : 'URL'
-  help       : 'Homepage for app.'
+  user:
+    - name       : 'homepage'
+      abbr       : 'w'
+      docstring  : 'cmd prefix'
+      defaultsTo : 'https://example.org/myapp'
+      typeHint   : 'URL'
+      help       : 'Homepage for app.'
