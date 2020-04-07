@@ -1,9 +1,9 @@
 name         : cmd_shell
-version      : 0.1.0
+version      : 0.2.0
 docstring    : Dart command shell app
 description  : A template for a command shell application.
 
-dartrix      : 0.1.24-alpha
+dartrix      : 0.2.0
 
 params:
   sys:

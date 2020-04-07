@@ -1,3 +1,7 @@
+## 0.2.1
+
+- update to dartrix 0.2.0
+
 ## 0.2.0
 
 - remove beta tag and bump to 0.2.0
