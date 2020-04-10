@@ -1,0 +1,15 @@
+builders:
+  version_builder:
+    import: "package:{{pkg}}/builders.dart"
+    builder_factories: ["versionBuilder"]
+    build_extensions: {".dart": ["version.g.part"]}
+    auto_apply: dependents
+    build_to: cache # source
+    applies_builders: ["source_gen|combining_builder"]
+
+targets:
+  $default:
+    builders:
+      {{pkg}}|version_builder:
+        generate_for:
+          - example/main.dart

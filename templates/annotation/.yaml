@@ -1,0 +1,13 @@
+name         : annotation
+version      : 0.1.0
+docstring    : Annotation demo template
+description  : Generates a package that defines and uses a simple annotation.
+
+dartrix      : 0.2.1
+
+params       :
+  sys:
+    - id : out
+      name: pkg
+      abbr: p
+      defaultsTo : myannotation
