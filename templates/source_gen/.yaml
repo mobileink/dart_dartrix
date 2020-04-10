@@ -1,0 +1,25 @@
+name         : source_gen
+version      : 0.1.0
+docstring    : >
+  Monorepo of 2 pkgs: a source_gen lib and client
+description  : Generates a monorepo containing two packages, one a source_gen library and the other a client that uses the library.
+
+dartrix      : 0.2.1
+
+params       :
+  sys:
+    - id : out
+      defaultsTo : source_gen
+  user:
+    - name       : genlib
+      seg        : GENLIB
+      abbr       : l
+      docstring  : source_gen library
+      typeHint   : string
+      defaultsTo : genlib
+    - name       : genclient
+      seg        : GENCLIENT
+      abbr       : c
+      docstring  : source_gen library client
+      typeHint   : string
+      defaultsTo : genclient
