@@ -1,6 +1,6 @@
 name         : hello
 version      : 0.2.0
-docstring    : A simple template
+docstring    : A simple Dart command app.
 description  : Generates a Dart app that prints a hello msg.
 
 dartrix      : 0.2.0
